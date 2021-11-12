@@ -1,0 +1,27 @@
+
+
+need to get libraries
+sudo yum install libusbx-devel
+
+
+may need to install pip for python
+#haven't tested these, check or see documentation
+yum install epel-release 
+yum install python-pip
+
+install exodriver 
+sudo ./install.sh
+
+install python modules
+sudo python setup.py install
+
+install module
+sudo python -m pip install LabJackPython --user
+
+Don't forget that last step, caused me a lot of issues
+
+test by python
+import u3
+
+
+
